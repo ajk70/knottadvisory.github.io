@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#0f2a3d"/>
-  <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="200" font-family="Georgia,serif">KA</text>
+  <rect width="512" height="512" rx="48" ry="48" fill="#0f2a3d"/>
+  <g transform="translate(256,256)">
+    <circle r="190" fill="#1f496b"/>
+    <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="190" fill="#fff">KA</text>
+  </g>
 </svg>
-
