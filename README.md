@@ -1,1 +1,0 @@
-Upload contents to `knottadvisory.github.io` (overwrite). Keep CNAME.
