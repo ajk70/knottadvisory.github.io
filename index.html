@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knott Advisory | Strategic Operations & Digital Leadership</title>
+    <meta name="description" content="Strategic Operations & Digital Leadership for Manufacturing SMEs in Yorkshire. Led by Andrew Knott, MBA (Distinction), CEng.">
+    <style>
+        /* CORE STYLES - NAVY & GOLD THEME */
+        :root {
+            --primary: #003366; /* Deep Navy */
+            --secondary: #f4f4f4; /* Light Grey */
+            --text: #333333;
+            --accent: #d4af37; /* Gold */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 { color: var(--primary); }
+        a { text-decoration: none; color: inherit; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-align: center;
+            margin: 5px;
+        }
+        .btn-gold {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .btn-gold:hover {
+            background: #b3922b;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .btn-nav {
+            background: var(--primary);
+            color: white;
+        }
+        .btn-nav:hover { background: #002244; }
+
+        /* HEADER */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        /* LOGO HANDLING */
+        .logo-container { display: flex; align-items: center; }
+        .logo-img { 
+            max-height: 55px; 
+            width: auto; 
+            margin-right: 15px;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-color: var(--primary);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 { color: white; font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px auto; color: #e0e0e0; }
+
+        /* SECTIONS */
+        .intro { padding: 60px 0; text-align: center; background: white; }
+        .intro-box { max-width: 800px; margin: 0 auto; }
+        .highlight { color: var(--primary); font-weight: bold; }
+
+        .services { background: var(--secondary); padding: 60px 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+        .card h3 { margin-top: 0; color: var(--primary); }
+
+        /* CREDENTIALS */
+        .credentials { padding: 60px 0; text-align: center; }
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .badge-item {
+            border: 1px solid #ddd;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            background: #f9f9f9;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .badge-gold {
+            background: #fff8e1;
+            border-color: var(--accent);
+            color: #8f7318;
+        }
+
+        /* FOOTER */
+        footer { background: var(--primary); color: white; padding: 50px 0; text-align: center; }
+        footer h2 { color: white; }
+        footer a { text-decoration: underline; color: var(--accent); }
+        .contact-info { font-size: 1.2rem; margin-top: 20px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+            nav { flex-direction: column; gap: 10px; }
+            .logo-text { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="logo.jpg" alt="Knott Advisory Logo" class="logo-img" onerror="this.style.display='none'">
+                    <div class="logo-text">Knott Advisory</div>
+                </div>
+                <div><a href="#contact" class="btn btn-nav">Get in Touch</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Big Industry Expertise.<br>Scaled for Local Growth.</h1>
+            <p>Bringing FTSE 100 operational rigour, digital strategy, and 30 years of engineering authority to Yorkshire's manufacturing leaders.</p>
+            
+            <div style="margin-top: 30px;">
+                <a href="flyer.pdf" class="btn btn-gold" target="_blank">📄 Download Capability Flyer</a>
+                <a href="cv.pdf" class="btn btn-outline" target="_blank">👤 Download Executive CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="intro">
+        <div class="container">
+            <div class="intro-box">
+                <h2>Strategic Leadership for SMEs</h2>
+                <p>Manufacturing SMEs often hit a "Growth Ceiling." You want to scale up, digitize, or improve efficiency, but hiring a full-time Operations Director is a heavy overhead.</p>
+                <p><strong>Knott Advisory</strong> fills that gap. Led by <span class="highlight">Andrew Knott (EUR ING, MBA Distinction)</span>, we provide fractional leadership to help you de-risk capital projects and professionalize your engineering operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 style="text-align: center;">Core Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Fractional Director / NED</h3>
+                    <p>Monthly board-level oversight to challenge operational assumptions, guide long-term strategy, and bridge the gap between "Technical Reality" and "Business Goals."</p>
+                </div>
+                <div class="card">
+                    <h3>The Digital Health Check</h3>
+                    <p>A high-impact audit of your current factory systems (IT/OT). We deliver a clear, costed roadmap to move from paper and spreadsheets to data-driven manufacturing.</p>
+                </div>
+                <div class="card">
+                    <h3>Capital Project Governance</h3>
+                    <p>Independent "Second Opinion" reviews on major CapEx investments (New lines, ERP/MES systems). We ensure you aren't being oversold by technology vendors.</p>
+                </div>
+                <div class="card">
+                    <h3>Engineering Mentorship</h3>
+                    <p>Coaching your existing Engineering Manager or Operations Lead to step up to senior leadership, instilling professional standards (CMgr/CEng rigor).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credentials">
+        <div class="container">
+            <h2>The Authority to Deliver</h2>
+            <p>30 years of experience delivering multi-million-pound programmes for global leaders including <strong>Novo Nordisk</strong>, <strong>GE Healthcare</strong>, and <strong>Takeda</strong>.</p>
+            
+            <div class="badges">
+                <div class="badge-item badge-gold">MBA (Distinction) - Dean's Prize 2025</div>
+                <div class="badge-item">EUR ING</div>
+                <div class="badge-item">Chartered Engineer (CEng)</div>
+                <div class="badge-item">Fellow IET (FIET)</div>
+                <div class="badge-item">Fellow CMI (FCMI)</div>
+                <div class="badge-item">Fellow APM (FAPM)</div>
+                <div class="badge-item">Approved Supplier to Johnson & Johnson</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Ready to Scale?</h2>
+            <p>Let's have a conversation about your operational challenges.</p>
+            <div class="contact-info">
+                <p><strong>Andrew Knott</strong> | Principal Consultant</p>
+                <p>📍 Ripon, North Yorkshire</p>
+                <p>📞 <a href="tel:+447899296926">+44 7899 296 926</a></p>
+                <p>📧 <a href="mailto:andrew@knottap.co.uk" style="color: white;">andrew@knottap.co.uk</a></p>
+            </div>
+            <p style="margin-top: 40px; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Knott Advisory. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
