@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knott Advisory | Strategic Operations & Digital Leadership</title>
-    <meta name="description" content="Strategic Operations & Digital Leadership for Manufacturing SMEs in Yorkshire. Led by Andrew Knott, MBA (Distinction), CEng.">
+    <title>Knott Advisory | Board-Level Governance & Digital Leadership</title>
+    <meta name="description" content="Strategic Board Advisory & Technical Governance for Manufacturing & Life Sciences. Led by Andrew Knott, MBA (Distinction), CEng FIET, FCMI.">
     <style>
         /* CORE STYLES - NAVY & GOLD THEME */
         :root {
@@ -56,11 +56,6 @@
             color: var(--primary);
             transform: translateY(-2px);
         }
-        .btn-nav {
-            background: var(--primary);
-            color: white;
-        }
-        .btn-nav:hover { background: #002244; }
 
         /* HEADER */
         header {
@@ -77,13 +72,6 @@
             padding: 15px 0;
         }
         
-        /* LOGO HANDLING */
-        .logo-container { display: flex; align-items: center; }
-        .logo-img { 
-            max-height: 55px; 
-            width: auto; 
-            margin-right: 15px;
-        }
         .logo-text {
             font-size: 1.5rem;
             font-weight: bold;
@@ -99,15 +87,22 @@
             padding: 100px 0;
             text-align: center;
         }
-        .hero h1 { color: white; font-size: 2.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px auto; color: #e0e0e0; }
+        .hero h1 { color: white; font-size: 2.8rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 30px auto; color: #e0e0e0; }
 
         /* SECTIONS */
-        .intro { padding: 60px 0; text-align: center; background: white; }
-        .intro-box { max-width: 800px; margin: 0 auto; }
+        .intro { padding: 80px 0; text-align: center; background: white; }
+        .intro-box { max-width: 850px; margin: 0 auto; }
         .highlight { color: var(--primary); font-weight: bold; }
 
-        .services { background: var(--secondary); padding: 60px 0; }
+        .governance-section {
+            background: #001f3f;
+            color: white;
+            padding: 80px 0;
+        }
+        .governance-section h2 { color: var(--accent); }
+
+        .services { background: var(--secondary); padding: 80px 0; }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -121,10 +116,9 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             border-top: 4px solid var(--primary);
         }
-        .card h3 { margin-top: 0; color: var(--primary); }
 
         /* CREDENTIALS */
-        .credentials { padding: 60px 0; text-align: center; }
+        .credentials { padding: 80px 0; text-align: center; }
         .badges {
             display: flex;
             flex-wrap: wrap;
@@ -147,18 +141,8 @@
             color: #8f7318;
         }
 
-        /* FOOTER */
-        footer { background: var(--primary); color: white; padding: 50px 0; text-align: center; }
-        footer h2 { color: white; }
-        footer a { text-decoration: underline; color: var(--accent); }
-        .contact-info { font-size: 1.2rem; margin-top: 20px; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .grid { grid-template-columns: 1fr; }
-            nav { flex-direction: column; gap: 10px; }
-            .logo-text { font-size: 1.2rem; }
-        }
+        footer { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
+        footer a { color: var(--accent); }
     </style>
 </head>
 <body>
@@ -166,56 +150,63 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo-container">
-                    <img src="logo.jpg" alt="Knott Advisory Logo" class="logo-img" onerror="this.style.display='none'">
-                    <div class="logo-text">Knott Advisory</div>
-                </div>
-                <div><a href="#contact" class="btn btn-nav">Get in Touch</a></div>
+                <div class="logo-text">Knott Advisory</div>
+                <div><a href="#contact" class="btn btn-gold" style="padding: 10px 20px;">Contact Andrew</a></div>
             </nav>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Big Industry Expertise.<br>Scaled for Local Growth.</h1>
-            <p>Bringing FTSE 100 operational rigour, digital strategy, and 30 years of engineering authority to Yorkshire's manufacturing leaders.</p>
+            <h1>Strategic Board Advisory.<br>Technical Integrity.</h1>
+            <p>Bridging the gap between <strong>Technical Reality (OT)</strong> and <strong>Commercial Strategy</strong>. I help Life Science boards and Manufacturing SMEs de-risk capital investment and accelerate digital maturity.</p>
             
             <div style="margin-top: 30px;">
-                <a href="flyer.pdf" class="btn btn-gold" target="_blank">📄 Download Capability Flyer</a>
-                <a href="cv.pdf" class="btn btn-outline" target="_blank">👤 Download Executive CV</a>
+                <a href="cv.pdf" class="btn btn-gold" target="_blank">View Executive CV</a>
+                <a href="#governance" class="btn btn-outline">Governance Statement</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="intro">
+    <section class="intro">
         <div class="container">
             <div class="intro-box">
-                <h2>Strategic Leadership for SMEs</h2>
-                <p>Manufacturing SMEs often hit a "Growth Ceiling." You want to scale up, digitize, or improve efficiency, but hiring a full-time Operations Director is a heavy overhead.</p>
-                <p><strong>Knott Advisory</strong> fills that gap. Led by <span class="highlight">Andrew Knott (EUR ING, MBA Distinction)</span>, we provide fractional leadership to help you de-risk capital projects and professionalize your engineering operations.</p>
+                <h2>Boardroom Value from the Factory Floor</h2>
+                <p>Technical complexity is a primary source of boardroom risk. As an <strong>Exceptional NED</strong> (Leeds) and <strong>Chartered Engineer</strong>, I provide the independent oversight needed to ensure multi-million pound digital transformations deliver genuine ROI and regulatory compliance.</p>
+                <p>Bolstered by a <span class="highlight">Leeds MBA (Distinction) and the Dean's Prize 2025</span>, I translate complex OT automation challenges into the financial and strategic language of the C-Suite.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="governance" class="governance-section">
+        <div class="container">
+            <div class="intro-box">
+                <h2>Fiduciary Responsibility & Governance</h2>
+                <p>My advisory practice is built on a commitment to **Section 172 of the Companies Act 2006** and the **Wates Corporate Governance Principles**. I provide Boards with independent assurance on non-financial risks often missed by generalists:</p>
+                <ul style="text-align: left; display: inline-block; margin-top: 20px;">
+                    <li><strong>Strategic Risk:</strong> Independent oversight of £MM CapEx and GAMP 5 compliance.</li>
+                    <li><strong>Digital Resilience:</strong> Board-level advocacy for Cyber Security (NIS2) and AI Ethics.</li>
+                    <li><strong>Long-term Success:</strong> Ensuring technical architecture aligns with commercial growth.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 style="text-align: center;">Core Services</h2>
+            <h2 style="text-align: center;">Board & Advisory Services</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Fractional Director / NED</h3>
-                    <p>Monthly board-level oversight to challenge operational assumptions, guide long-term strategy, and bridge the gap between "Technical Reality" and "Business Goals."</p>
+                    <h3>Non-Executive Director (NED)</h3>
+                    <p>Providing independent challenge and technical-to-commercial translation. Specialising in Audit and Risk Committees for high-growth SMEs and Life Science firms.</p>
                 </div>
                 <div class="card">
-                    <h3>The Digital Health Check</h3>
-                    <p>A high-impact audit of your current factory systems (IT/OT). We deliver a clear, costed roadmap to move from paper and spreadsheets to data-driven manufacturing.</p>
+                    <h3>Capital Programme Governance</h3>
+                    <p>Serving as a "Boardroom Bridge" during major facility expansions or MES/DCS deployments. Ensuring vendor delivery meets stringent GxP and ROI requirements.</p>
                 </div>
                 <div class="card">
-                    <h3>Capital Project Governance</h3>
-                    <p>Independent "Second Opinion" reviews on major CapEx investments (New lines, ERP/MES systems). We ensure you aren't being oversold by technology vendors.</p>
-                </div>
-                <div class="card">
-                    <h3>Engineering Mentorship</h3>
-                    <p>Coaching your existing Engineering Manager or Operations Lead to step up to senior leadership, instilling professional standards (CMgr/CEng rigor).</p>
+                    <h3>Pharma 4.0 Strategy</h3>
+                    <p>Strategic definition for the full ISA-95 stack. I help boards move from operational silos to data-driven, globally compliant manufacturing architectures.</p>
                 </div>
             </div>
         </div>
@@ -223,33 +214,29 @@
 
     <section class="credentials">
         <div class="container">
-            <h2>The Authority to Deliver</h2>
-            <p>30 years of experience delivering multi-million-pound programmes for global leaders including <strong>Novo Nordisk</strong>, <strong>GE Healthcare</strong>, and <strong>Takeda</strong>.</p>
+            <h2>The Authority to Lead</h2>
+            <p>30 years of excellence delivering for global leaders including <strong>Novo Nordisk</strong>, <strong>GE Healthcare</strong>, and <strong>Takeda</strong>.</p>
             
             <div class="badges">
                 <div class="badge-item badge-gold">MBA (Distinction) - Dean's Prize 2025</div>
-                <div class="badge-item">EUR ING</div>
-                <div class="badge-item">Chartered Engineer (CEng)</div>
-                <div class="badge-item">Chartered Manager (CMgr)</div>
-                <div class="badge-item">Fellow IET (FIET)</div>
-                <div class="badge-item">Fellow CMI (FCMI)</div>
-                <div class="badge-item">Fellow APM (FAPM)</div>
-                <div class="badge-item">Approved Supplier to Tier 1 Life Science Manufacturers & OEMs</div>
+                <div class="badge-item badge-gold">PMP® (3x Above Target Performance)</div>
+                <div class="badge-item">CEng FIET</div>
+                <div class="badge-item">FCMI CMgr</div>
+                <div class="badge-item">FAPM / PMI-ACP®</div>
+                <div class="badge-item">Exceptional NED (Leeds Univ.)</div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
         <div class="container">
-            <h2>Ready to Scale?</h2>
-            <p>Let's have a conversation about your operational challenges.</p>
+            <h2>Let's Protect Your Capital Investment</h2>
             <div class="contact-info">
-                <p><strong>Andrew Knott</strong> | Principal Consultant</p>
-                <p>📍 Ripon, North Yorkshire</p>
+                <p><strong>Andrew Knott</strong> | Principal Consultant & NED</p>
                 <p>📞 <a href="tel:+447899296926">+44 7899 296 926</a></p>
-                <p>📧 <a href="mailto:andrew@knottadvisory.co.uk" style="color: white;">andrew@knottadvisory.co.uk</a></p>
+                <p>📧 <a href="mailto:andrew@knottadvisory.co.uk">andrew@knottadvisory.co.uk</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/andrew-knott-programme-director-pharma4-digital-transformation/">LinkedIn Profile</a></p>
             </div>
-            <p style="margin-top: 40px; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Knott Advisory. All Rights Reserved.</p>
         </div>
     </footer>
 
